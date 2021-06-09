@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Modal from './modal/modal'
 
 const App = () => (
   <div>
-      <h1>TreesNBees</h1>
+      <Modal />
   </div>
 );
 
