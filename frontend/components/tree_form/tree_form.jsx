@@ -26,17 +26,17 @@ class TreeForm extends React.Component{
   render() {
     const { title, body } = this.state;
     return (
-      <div className="new-bench-container">
+      <div className="new-tree-container">
           <h3>List Your Tree</h3>
           <form onSubmit={this.handleSubmit}>
-            <label className="bench-title">Title</label>
+            <label className="tree-title">Title</label>
             <input
               type="text"
               value={title}
               onChange={this.update('title')}
             />
 
-            <label className="bench-body">Description</label>
+            <label className="tree-body">Description</label>
             <input
               type="text"
               value={body}

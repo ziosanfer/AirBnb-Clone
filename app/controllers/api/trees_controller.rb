@@ -17,7 +17,7 @@ class Api::TreesController < ApplicationController
 
   private
   def tree_params
-    params.require(:bench).permit( :title, :body)
+    params.require(:tree).permit( :title, :body)
   end
 
 end
