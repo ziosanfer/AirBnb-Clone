@@ -24,4 +24,4 @@ const Hello = ({ currentUser, logout, openModal }) => {
   );
 };
 
-export default Greeting;
+export default Hello;

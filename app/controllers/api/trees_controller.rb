@@ -2,7 +2,7 @@ class Api::TreesController < ApplicationController
   before_action :require_logged_in, only: [:create]
 
   def index
-    trees = Tree.all
+    @trees = Tree.all
     render :index
   end
 
@@ -17,7 +17,7 @@ class Api::TreesController < ApplicationController
 
   private
   def tree_params
-    params.require(:tree).permit( :title, :body)
+    params.require(:tree).permit( :title, :body, :pic)
   end
 
 end

@@ -15,11 +15,32 @@
  */
 
  html {
-     background-image: url("greek_juniper.jpg");
-     width: 100%;
-     height: max-content;
      text-decoration: none;
+     font-family: 'Titillium Web', sans-serif;
  }
+
+ body {
+     margin: 0;
+ }
+
+ .image-background {
+     background-image: url("jungle-tree.jpg");
+     color: white;
+     background-size: 100%;
+ }
+
+ .button {
+     background-color: deeppink;
+     border: none;
+     font-size: 25px;
+     border-radius: 50%;
+     float: right;
+     color: white;
+     margin-left: 0px;
+     margin-right: 10px;
+     margin-bottom: 300px;
+ }
+
 
  .topnav {
     display: flex;
@@ -30,34 +51,71 @@
     right: 0px;
     width: 100%;
     height: 90px;
-    z-index: -1;
  }
 
  .search-bar {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     z-index: 0;
     border: 1px solid darken(white, 30%);
-	border-radius: 20px 0 0 20px;
+}
+
+.search-container {
+    background-color: white;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 35px;
+}
+
+.search-ele {
+    margin-right: 10px;
+    margin-left: 51px;
+    border: none;
+    font-weight: bolder;
+    color: black;
+    padding-top: 0px;
+}
+
+.search-ele:hover {
+    background-color: lightgrey;
+    height: 40px;
+    border-radius: 75px;
+    margin-bottom: 70px;
 }
 
 .topnav-ele {
     text-decoration: none;
-    margin: 50px;
     margin-top: 10px;
+    margin: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.topnav-ele:hover {
+    color: lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
 .dropdown {
     display: flex;
     justify-items: flex-end;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 0px;
     right: 0px;
-    margin-left: 75%;
+    margin-left: 85%;
     width: 60px;
     height: 50px;
+    border-radius: 50%;
+}
+.dropdown-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    margin-left: 70px;
 }
 
 .dropdown-content {
@@ -65,17 +123,96 @@
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: inline-block;
-    background-color: white;
-
-}
-
-.banner-text {
     display: flex;
     justify-content: center;
-    position: absolute;
+    border-radius: 20px;
+    flex-direction: column;
+    background-color: white;
+    width: 100px;
+    height: 120px;
+    padding-left: 5px;
+    text-decoration: none;
+
 }
+
+.banner {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    background-color: black;
+    color: rgb(187, 187, 187);
+    font-size: 19px;
+    height: 45px;
+    padding-top: 15px;
+}
+
+.intro-text {
+    padding-bottom: 200px;
+    padding-left: 50px;
+}
+
+h1 {
+    border-color: black;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.explore {
+    margin-left: 120px;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 30px;
+    
+}
+
+.explore-this {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 60px;
+}
+
+.explore-button {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+p {
+    font-weight: bolder;
+}
+
+.modal-background {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 10;
+ }
+
+ .modal-child {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .close-x {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+ }
